@@ -8,7 +8,7 @@
     </div>
 
     <div class="relative z-10">
-    <div class="flex flex-col items-center justify-center p-10 text-center">
+    <div class="flex flex-col items-center justify-center p-5 text-center">
       <div class="p-5">
         <a href="https://maps.app.goo.gl/tuxRM2f1JJfqfjtZ9" target="_blank" rel="noopener noreferrer" class="mb-10 inline-flex items-center space-x-2 rounded-full border border-primary bg-primary px-4 py-1.5 text-sm text-accent shadow-sm transition-colors hover:border-icterine hover:bg-secondary hover:text-icterine">
           Santa Fe, Calle 4, 6b 
