@@ -1,7 +1,11 @@
 <template>
   <div class="relative bg-accent font-sans text-primary min-h-screen overflow-hidden">
     <!-- Animated background -->
-    <div class="animated-bg absolute inset-0 z-0"></div>
+    <div class="flower-container absolute inset-0 z-0">
+      <div v-for="i in 200" :key="i" class="flower-wrapper">
+        <div class="flower"></div>
+      </div>
+    </div>
 
     <div class="relative z-10">
     <div class="flex flex-col items-center justify-center p-10 text-center">
@@ -94,27 +98,45 @@ export default {
 
 <style scoped>
 
-.animated-bg {
-  --s: 150px; /* Tamaño del patrón */
-  --c-inner: rgba(128, 128, 128, 0.1); /* Color interior de la onda (un poco más visible) */
-  --c-outer: rgba(128, 128, 128, 0.06); /* Color exterior de la onda */
-  --c-outer2: transparent; /* El resto del fondo será transparente */
+.flower-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 40px;
+  padding: 40px;
+  animation: move-background 40s infinite linear;
+  width: 150vw; /* Make it wider and taller to allow for movement */
+  height: 150vh;
+  position: absolute;
+  top: -25vh;
+  left: -25vw;
+}
 
-  background: radial-gradient(
-    circle at 50% 99%,
-    transparent 10%,
-    var(--c-inner) 10% 30%,
-    var(--c-outer) 30% 60%,
-    var(--c-outer2) 60% 100%,
-    transparent 100%
-  );
-  background-size: var(--s) var(--s);
-  animation: move-background 15s infinite linear;
+.flower-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flower {
+  --size: 25px;
+  --petal-clr: rgba(255, 97, 192, 0.05);
+  --center-clr: rgba(255, 255, 255, 0.08);
+  height: var(--size);
+  width: var(--size);
+  border-radius: 50%;
+  background-color: var(--center-clr);
+  box-shadow:
+    calc(var(--size) * -0.4) calc(var(--size) * -0.6) var(--petal-clr),
+    calc(var(--size) * 0.4) calc(var(--size) * -0.6) var(--petal-clr),
+    calc(var(--size) * 0.7) 0 var(--petal-clr),
+    calc(var(--size) * 0.4) calc(var(--size) * 0.6) var(--petal-clr),
+    calc(var(--size) * -0.4) calc(var(--size) * 0.6) var(--petal-clr),
+    calc(var(--size) * -0.7) 0 var(--petal-clr);
 }
 
 @keyframes move-background {
   from { background-position: 0 0; }
-  to { background-position: 150px 0; }
+  to { transform: translate(-200px, -200px); }
 }
 
 </style>
