@@ -12,9 +12,9 @@
         </a>
       </div>
 
-      <h1 class="text-6xl font-medium text-primary md:text-7xl">
+      <h1 class="font-serif text-8xl font-medium text-primary md:text-8xl">
         Flores
-        <span class="font-serif block italic text-9xl md:text-9xl mt-2 text-icterine">
+        <span class="font-display block italic text-9xl md:text-9xl mt-2 text-icterine">
           Mari
         </span>
       </h1>

@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         serif: ['Playfair Display', 'serif'],
+        display: ['Parisienne', 'cursive'],
       },
       colors: {
         primary: '#f7edf0',
@@ -19,4 +20,3 @@ module.exports = {
   },
   plugins: [],
 }
-
