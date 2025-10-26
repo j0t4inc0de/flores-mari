@@ -1,9 +1,13 @@
 <template>
-  <div class="bg-accent font-sans text-primary min-h-screen">
+  <div class="relative bg-accent font-sans text-primary min-h-screen overflow-hidden">
+    <!-- Animated background -->
+    <div class="animated-bg absolute inset-0 z-0"></div>
+
+    <div class="relative z-10">
     <div class="flex flex-col items-center justify-center p-10 text-center">
       <div class="p-5">
         <a href="https://maps.app.goo.gl/tuxRM2f1JJfqfjtZ9" target="_blank" rel="noopener noreferrer" class="mb-10 inline-flex items-center space-x-2 rounded-full border border-primary bg-primary px-4 py-1.5 text-sm text-accent shadow-sm transition-colors hover:border-icterine hover:bg-secondary hover:text-icterine">
-          Santa Fe, Calle 4, 6 
+          Santa Fe, Calle 4, 6b 
           <svg class="m-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
               <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                   <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
@@ -73,6 +77,7 @@
           </a>
         </div> -->
     </div>
+    </div>
     
   </div>
 </template>
@@ -88,5 +93,28 @@ export default {
 </script>
 
 <style scoped>
+
+.animated-bg {
+  --s: 150px; /* Tamaño del patrón */
+  --c-inner: rgba(128, 128, 128, 0.1); /* Color interior de la onda (un poco más visible) */
+  --c-outer: rgba(128, 128, 128, 0.06); /* Color exterior de la onda */
+  --c-outer2: transparent; /* El resto del fondo será transparente */
+
+  background: radial-gradient(
+    circle at 50% 99%,
+    transparent 10%,
+    var(--c-inner) 10% 30%,
+    var(--c-outer) 30% 60%,
+    var(--c-outer2) 60% 100%,
+    transparent 100%
+  );
+  background-size: var(--s) var(--s);
+  animation: move-background 15s infinite linear;
+}
+
+@keyframes move-background {
+  from { background-position: 0 0; }
+  to { background-position: 150px 0; }
+}
 
 </style>
