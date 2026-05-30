@@ -21,7 +21,7 @@
         <!-- Location badge -->
         <div class="animate-fade-down">
           <a href="https://maps.app.goo.gl/tuxRM2f1JJfqfjtZ9" target="_blank" rel="noopener noreferrer"
-             class="location-badge mb-10 inline-flex items-center space-x-2 rounded-full border border-primary/40 bg-primary/20 backdrop-blur-md px-5 py-2 text-sm text-primary shadow-lg transition-all duration-300 hover:border-icterine hover:bg-primary/30 hover:shadow-icterine/20 hover:shadow-xl hover:scale-105">
+             class="location-badge mb-10 inline-flex items-center space-x-2 rounded-full border border-primary/40 text-dark/50 backdrop-blur-md px-5 py-2 text-sm text-primary shadow-lg transition-all duration-300 hover:border-icterine hover:bg-primary/30 hover:shadow-icterine/20 hover:shadow-xl hover:scale-105">
             <span class="font-medium tracking-wide">Santa Fe, Calle 4, 6b</span>
             <svg class="m-1 animate-bounce-gentle" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
               <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -34,24 +34,24 @@
 
         <!-- Decorative divider -->
         <div class="animate-fade-in animation-delay-200 flex items-center gap-3 mb-6">
-          <span class="block w-12 h-px bg-primary/30"></span>
-          <span>✿</span>
-          <span class="block w-12 h-px bg-primary/30"></span>
+          <span class="block w-12 h-px bg-dark/20"></span>
+          <span class="text-dark/50 text-sm">✿</span>
+          <span class="block w-12 h-px bg-dark/20"></span>
         </div>
 
         <!-- Title -->
-        <h1 class="animate-fade-up animation-delay-300 font-serif text-6xl font-medium text-primary md:text-8xl leading-tight">
+        <h1 class="animate-fade-up animation-delay-300 font-serif text-6xl font-medium text-dark md:text-8xl leading-tight drop-shadow-[0_1px_2px_rgba(255,255,255,0.3)]">
           Flores
-          <span class="font-display block italic text-7xl md:text-9xl mt-2 text-icterine drop-shadow-[0_0_25px_rgba(244,244,130,0.3)] title-glow">
+          <span class="font-display block italic text-7xl md:text-9xl mt-2 text-icterine drop-shadow-[0_2px_10px_rgba(74,25,66,0.4)] title-glow">
             Mari
           </span>
         </h1>
 
         <!-- Subtitle -->
-        <p class="animate-fade-up animation-delay-500 p-5 mt-6 max-w-lg text-base md:text-lg text-primary/90 leading-relaxed font-light tracking-wide">
-          Mi nombre es <span class="font-medium text-primary">Marisol</span>, y me dedico a la venta de
-          <span class="font-medium text-icterine">Ramos</span> y
-          <span class="font-medium text-icterine">Arreglos Florales</span>
+        <p class="animate-fade-up animation-delay-500 p-5 mt-6 max-w-lg text-base md:text-lg text-dark/80 leading-relaxed font-light tracking-wide">
+          Mi nombre es <span class="font-medium text-dark">Marisol</span>, y me dedico a la venta de
+          <span class="font-semibold text-dark">Ramos</span> y
+          <span class="font-semibold text-dark">Arreglos Florales</span>
           para toda ocasión. Ofrezco una amplia variedad de flores frescas y hermosas para hacer que tus momentos especiales sean aún más memorables.
         </p>
 
@@ -102,12 +102,12 @@
       <!-- Footer -->
       <footer class="animate-fade-up animation-delay-900 relative z-10 py-6 text-center">
         <div class="flex items-center justify-center gap-3 mb-3">
-          <span class="block w-16 h-px bg-primary/20"></span>
-          <span class="text-white text-xs">✿</span>
-          <span class="block w-16 h-px bg-primary/20"></span>
+          <span class="block w-16 h-px bg-dark/20"></span>
+          <span class="text-dark/50 text-sm">✿</span>
+          <span class="block w-16 h-px bg-dark/20"></span>
         </div>
-        <p class="text-xs text-primary/40 font-light tracking-widest uppercase">
-          Flores Mari · Hecho con 🤍
+        <p class="text-xs text-dark/50 font-light tracking-widest uppercase">
+          Flores Mari · Hecho con 🖤
         </p>
       </footer>
 

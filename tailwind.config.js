@@ -15,6 +15,7 @@ module.exports = {
         accent: '#F4AFAB',
         vanilla: '#F4EEA9',
         icterine: '#F4F482',
+        dark: '#4a1942',
       },
     },
   },
