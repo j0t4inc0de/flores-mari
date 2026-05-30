@@ -39,6 +39,11 @@
           <span class="block w-12 h-px bg-dark/20"></span>
         </div>
 
+        <!-- Logo -->
+        <div class="animate-fade-up animation-delay-200 mb-4">
+          <img src="/logo.svg" alt="Flores Mari" class="w-24 h-24 md:w-32 md:h-32 mx-auto drop-shadow-lg transition-transform duration-500 hover:rotate-[15deg] hover:scale-110" />
+        </div>
+
         <!-- Title -->
         <h1 class="animate-fade-up animation-delay-300 font-serif text-6xl font-medium text-dark md:text-8xl leading-tight drop-shadow-[0_1px_2px_rgba(255,255,255,0.3)]">
           Flores

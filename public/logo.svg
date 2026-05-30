@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="petalGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7edf0"/>
+      <stop offset="100%" stop-color="#f4cbc6"/>
+    </linearGradient>
+    <linearGradient id="petalGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4F482"/>
+      <stop offset="100%" stop-color="#F4EEA9"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4AFAB"/>
+      <stop offset="100%" stop-color="#f4cbc6"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d5a2"/>
+      <stop offset="100%" stop-color="#7bc47f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Pétalos traseros (rosa claro) -->
+  <ellipse cx="100" cy="58" rx="22" ry="38" fill="url(#petalGrad1)" transform="rotate(0, 100, 100)" opacity="0.9"/>
+  <ellipse cx="100" cy="58" rx="22" ry="38" fill="url(#petalGrad1)" transform="rotate(72, 100, 100)" opacity="0.9"/>
+  <ellipse cx="100" cy="58" rx="22" ry="38" fill="url(#petalGrad1)" transform="rotate(144, 100, 100)" opacity="0.9"/>
+  <ellipse cx="100" cy="58" rx="22" ry="38" fill="url(#petalGrad1)" transform="rotate(216, 100, 100)" opacity="0.9"/>
+  <ellipse cx="100" cy="58" rx="22" ry="38" fill="url(#petalGrad1)" transform="rotate(288, 100, 100)" opacity="0.9"/>
+
+  <!-- Pétalos interiores (amarillo icterine) -->
+  <ellipse cx="100" cy="68" rx="14" ry="26" fill="url(#petalGrad2)" transform="rotate(36, 100, 100)" opacity="0.85"/>
+  <ellipse cx="100" cy="68" rx="14" ry="26" fill="url(#petalGrad2)" transform="rotate(108, 100, 100)" opacity="0.85"/>
+  <ellipse cx="100" cy="68" rx="14" ry="26" fill="url(#petalGrad2)" transform="rotate(180, 100, 100)" opacity="0.85"/>
+  <ellipse cx="100" cy="68" rx="14" ry="26" fill="url(#petalGrad2)" transform="rotate(252, 100, 100)" opacity="0.85"/>
+  <ellipse cx="100" cy="68" rx="14" ry="26" fill="url(#petalGrad2)" transform="rotate(324, 100, 100)" opacity="0.85"/>
+
+  <!-- Centro de la flor -->
+  <circle cx="100" cy="100" r="18" fill="url(#centerGrad)"/>
+  <circle cx="100" cy="100" r="12" fill="#F4AFAB" opacity="0.6"/>
+  <circle cx="100" cy="100" r="6" fill="#4a1942" opacity="0.3"/>
+
+  <!-- Hojitas decorativas abajo -->
+  <ellipse cx="78" cy="148" rx="10" ry="22" fill="url(#leafGrad)" transform="rotate(25, 78, 148)" opacity="0.7"/>
+  <ellipse cx="122" cy="148" rx="10" ry="22" fill="url(#leafGrad)" transform="rotate(-25, 122, 148)" opacity="0.7"/>
+
+  <!-- Tallo sutil -->
+  <line x1="100" y1="118" x2="100" y2="158" stroke="#7bc47f" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Texto "FM" -->
+  <text x="100" y="108" text-anchor="middle" font-family="'Parisienne', cursive" font-size="28" fill="#4a1942" opacity="0.7">FM</text>
+</svg>

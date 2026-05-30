@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  # Reemplaza con un nombre de servicio identificativo (ej: mi-app-web)
+  flores-mari-landing:
+    build: .
+    container_name: flores-mari-landing  # Nombre exacto que usará Cloudflare
+    restart: always
+    expose:
+      - "80"  # Abre el puerto de forma interna en la red de Docker (no en el host)
+    networks:
+      - proxy_network  # Importante: conectarse a tu red compartida
+
+networks:
+  proxy_network:
+    external: true  # Le dice a Compose que la red ya está creada en el servidor
